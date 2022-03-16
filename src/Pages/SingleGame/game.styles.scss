@@ -1,0 +1,67 @@
+@import '../../App.scss';
+.game-container {
+  // overflow: scroll;
+  min-height: calc(100vh - 6.9rem);
+  max-height: calc(100vh - 6.9rem);
+  &--header {
+    padding: 3rem;
+    min-height: 35%;
+    background-color: $color-secondary-dark;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  &--description {
+    padding: 3rem;
+  }
+
+  .game-title {
+    font-size: 4rem;
+    // align-self: center;
+  }
+
+  .description {
+    padding: 2rem 5rem;
+  }
+
+  &--gallery {
+    padding: 4rem 4rem;
+    display: flex;
+    gap: 3rem;
+    background-color: $color-secondary-dark;
+    .screenshot-image {
+      max-width: 20rem;
+    }
+  }
+
+  &--additional-info {
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    span {
+      font-style: italic;
+    }
+    p {
+      font-weight: 900;
+    }
+  }
+  &--system-req {
+    padding: 0rem 4rem 4rem;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    background-color: $color-secondary-dark;
+    span {
+      font-style: italic;
+    }
+    p {
+      font-weight: 900;
+    }
+  }
+  .section-title {
+    padding: 4rem 5rem;
+    background-color: $color-secondary-dark;
+  }
+}

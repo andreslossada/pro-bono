@@ -1,0 +1,18 @@
+@import '../../App.scss';
+.effect {
+  margin: 10px;
+  //   box-shadow: 0 0 $color-primary-dark;
+  transition: 0.5s !important;
+  &:hover {
+    box-shadow: -5px 5px $color-primary-dark;
+    transform: translate(5px, -5px);
+  }
+}
+
+.genre-tag {
+  border: 1px solid gray;
+  color: grey;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  margin-left: auto;
+}

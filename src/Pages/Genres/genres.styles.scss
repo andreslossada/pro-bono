@@ -1,0 +1,41 @@
+@import '../../App.scss';
+.genre-list {
+  //   max-width: 80%;
+  //   background-color: $color-secondary-light;
+
+  min-height: calc(100vh - 6.9rem);
+  max-height: calc(100vh - 6.9rem);
+  padding: 4rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  //   justify-items: center;
+  overflow: scroll;
+  &-section {
+    // display: inline-block;
+    // overflow-x: scroll;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    &__images {
+      overflow-x: scroll;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    // min-height: 17vh;
+    background-color: $color-secondary-dark;
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+
+  .game-image {
+    max-width: 15vw;
+    padding: 1rem;
+  }
+}

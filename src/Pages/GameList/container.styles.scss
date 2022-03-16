@@ -1,0 +1,13 @@
+.game-list {
+  // max-width: 80%;
+  // min-height: calc(100vh - 6.9rem);
+  // max-height: calc(100vh - 6.9rem);
+  // padding: 4rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+  // gap: 2rem;
+  // justify-items: center;
+  // overflow: scroll;
+  // background-color: aqua;
+}

@@ -1,0 +1,48 @@
+$color-primary-dark: #1572a1;
+$color-primary-light: #9ad0ec;
+$color-secondary-light: #efdad7;
+$color-secondary-dark: #e3bec6;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  // overflow-x: hidden;
+  // background-color: $color-secondary-light;
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: $color-secondary-light !important;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  // overflow-x: hidden;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-auto-flow: row;
+  // grid-template-rows: 12px 12px 12px;
+}
+
+.bg {
+  background-color: $color-secondary-light;
+}
